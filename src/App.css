@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f5f6fa;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.app {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ff99992d;
+    padding: 20px;
+}
+
+.app__dropdown {
+    background-color: white;
+}
+
+.app__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.app__header>h1 {
+    color: rgb(46, 101, 184);
+    font-size: 3rem;
+}
+
+.app__stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__left {
+    flex: 0.9;
+}
+
+.app_right {
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.app__information>h3 {
+    color: #6a5d5d;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.app__information>h3:last-of-type {
+    margin-top: 1rem;
+}
+
+.logo {
+    font-size: 2.5rem !important;
+    transform: rotate(-15deg);
+}
+
+@media (max-width: 990px) {
+    .app {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 530px) {
+    .app__header>h1 {
+        font-size: 1.5rem !important;
+    }
+    .logo {
+        font-size: 1.5rem !important;
+    }
+}

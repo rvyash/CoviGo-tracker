@@ -1,0 +1,46 @@
+.table {
+    margin-top: 20px;
+    overflow: scroll;
+    color: #6a5d5d;
+    background-color: white;
+    height: 400px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+.table {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.table :hover {
+    transform: scale(1.1);
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-bottom-right-radius: 50% !important;
+    border-style: outset;
+    border-radius: 10%;
+}
+
+.table td {
+    padding: 0.5rem;
+    border: none;
+}
+
+.table tr:nth-of-type(odd) {
+    background-color: rgba(46, 101, 184, 0.212);
+}
