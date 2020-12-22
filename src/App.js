@@ -76,26 +76,21 @@ const App = () => {
             });
     };
 
-    return ( <
-        div className = "app" >
-        <
-        div className = "app__left" >
-        <
-        div className = "app__header" >
-        <
-        h1 > < FlightTakeoffIcon className = "logo" / > Covi.Go < /h1> <
-        FormControl className = "app__dropdown" >
-        <
-        Select variant = "outlined"
+    return ( 
+        <div className = "app" >
+        <div className = "app__left" >
+        <div className = "app__header" >
+        <h1> <FlightTakeoffIcon className = "logo" /> Covi.Go </h1> 
+        <FormControl className = "app__dropdown" >
+        <Select variant = "outlined"
         value = { country }
         onChange = { onCountryChange } >
-        <
-        MenuItem value = "worldwide" > Worldwide < /MenuItem> {
-            countries.map((country) => ( <
-                MenuItem value = { country.value } > { country.name } < /MenuItem>
+        <MenuItem value = "worldwide" > Worldwide < /MenuItem> {
+            countries.map((country) => ( 
+                                        <MenuItem value = { country.value } > { country.name } </MenuItem>
             ))
-        } <
-        /Select>  <
+        } 
+</Select>  <
         /FormControl> <
         /div> <
         div className = "app__stats" >
