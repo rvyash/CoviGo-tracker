@@ -123,23 +123,19 @@ const App = () => {
         /> 
        </div> 
        <Card className = "app__right" >
-        <
-        CardContent >
-        <
-        div className = "app__information" >
-        <
-        h3 > Live Cases by Country < /h3>
+        <CardContent >
+        <div className = "app__information" >
+        <h3 > Live Cases by Country </h3>
 
-        <
-        Table countries = { tableData }
-        /> <
-        h3 > Worldwide { casesType } < /h3> <
-        LineGraph casesType = { casesType }
-        /> <
-        /div> <
-        /CardContent> <
-        /Card> <
-        /div>
+        <Table countries = { tableData }
+        /> 
+       <h3> Worldwide { casesType } </h3> 
+        <LineGraph casesType = { casesType }
+        /> 
+        </div> 
+        </CardContent> 
+        </Card> 
+        </div>
     );
 };
 
