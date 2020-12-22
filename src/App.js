@@ -90,40 +90,39 @@ const App = () => {
                                         <MenuItem value = { country.value } > { country.name } </MenuItem>
             ))
         } 
-</Select>  <
-        /FormControl> <
-        /div> <
-        div className = "app__stats" >
-        <
-        InfoBox onClick = {
+</Select>  
+</FormControl> 
+</div> 
+<div className = "app__stats" >
+        <InfoBox onClick = {
             (e) => setCasesType("cases") }
         title = "Coronavirus Cases"
         isRed active = { casesType === "cases" }
         cases = { prettyPrintStat(countryInfo.todayCases) }
         total = { numeral(countryInfo.cases).format("0.0a") }
-        /> <
-        InfoBox onClick = {
+        /> 
+        <InfoBox onClick = {
             (e) => setCasesType("recovered") }
         title = "Recovered"
         active = { casesType === "recovered" }
         cases = { prettyPrintStat(countryInfo.todayRecovered) }
         total = { numeral(countryInfo.recovered).format("0.0a") }
-        /> <
-        InfoBox onClick = {
+        /> 
+        <InfoBox onClick = {
             (e) => setCasesType("deaths") }
         title = "Deaths"
         isRed active = { casesType === "deaths" }
         cases = { prettyPrintStat(countryInfo.todayDeaths) }
         total = { numeral(countryInfo.deaths).format("0.0a") }
-        /> <
-        /div> <
-        Map countries = { mapCountries }
+        /> 
+       </div> 
+       <Map countries = { mapCountries }
         casesType = { casesType }
         center = { mapCenter || dfLocation }
         zoom = { mapZoom }
-        /> <
-        /div> <
-        Card className = "app__right" >
+        /> 
+       </div> 
+       <Card className = "app__right" >
         <
         CardContent >
         <
